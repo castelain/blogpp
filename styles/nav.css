@@ -1,0 +1,37 @@
+nav.nav-hori {
+    background-color: #666;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+nav.nav-hori ul li {
+    display: inline-block;
+    width: 5%;
+    margin: 0 5px;
+}
+
+nav.nav-hori ul {
+    margin: 5px 0;
+}
+
+nav.nav-hori a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 10px;
+    color: #222;
+}
+
+nav li.float-left {
+    float: left;
+}
+
+nav li.float-right {
+    float: right;
+}
+
+nav.nav-hori label {
+    font-size: 1.2rem;
+    color: #111;
+}
