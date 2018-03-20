@@ -1,5 +1,6 @@
 .stop-float {
     clear: both;
+    height: 5px;
 }
 
 body {
