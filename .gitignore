@@ -1,4 +1,4 @@
 # Customly ignore .idea
 .idea
 
-.images
+.images/*
