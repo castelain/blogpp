@@ -1,7 +1,83 @@
-section {
+section.today, section.posts {
     float: left;
     width: 50%;
     box-sizing: border-box;
     border: 1px solid black;
     padding-left: 1rem;
+}
+
+/* profile styles */
+
+section.profile {
+    background-color: #2dffab;
+}
+
+section.profile .profile-key {
+    line-height: 2;
+}
+
+section.profile img{
+    float: left;
+}
+
+section.profile .stop-float {
+    line-height: 0;
+}
+
+/* trends styles */
+section.trends {
+    background-color: #099f9b;
+}
+
+section.trends ul {
+    margin-top: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+section.trends ul li {
+    float: left;
+    list-style-type: none;
+    width: 150px;
+}
+
+section.trends ul li a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    line-height: 3;
+    text-align: center;
+    color: #aaaaaa;
+    background-color: #099f9b;
+}
+
+section.trends ul li a:focus, section.trends ul li a:hover {
+    background-color: #2dffab;
+    color: #222222;
+}
+
+section.trends ul li a.active {
+    background-color: #2dffab;
+    color: #222222;
+}
+
+section.trends .panels {
+    height: 500px;
+    position: relative;
+    clear: both;
+}
+
+section.trends .panels div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #2dffab;
+}
+
+section.trends .active-panel {
+    z-index: 1;
 }

@@ -5,6 +5,11 @@
     height: 5px;
 }
 
+html {
+    font-family: sans-serif;
+}
+
 body {
     padding: 10px 30px;
+    margin: 0 auto;
 }

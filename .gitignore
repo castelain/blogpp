@@ -1,4 +1,5 @@
 # Customly ignore .idea
 .idea
 
-.images/*
+# ignore png pictures
+*.png

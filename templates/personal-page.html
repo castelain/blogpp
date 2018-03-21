@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Blog++ 个人资料</title>
@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/section.css">
 </head>
 <body>
 <nav class="nav-hori">
     <ul>
-        <li class="float-left"><a href="#">主页</a></li>
+        <li class="float-left"><a href="index.html">主页</a></li>
         <li class="float-right"><a href="#">登录</a></li>
         <li class="float-right"><a href="#">注册</a></li>
         <li class="float-right"><a href="#">帮助</a></li>
@@ -24,6 +25,27 @@
     <hr>
 </header>
 
+<section class="profile">
+    <img src="../images/portrait.png">
+    <span class="profile-key">昵称：</span><span>不再犹豫</span><br>
+    <span class="profile-key">签名：</span><span>假期和朋友是人生中最精彩的两样东西。</span>
+</section>
+
+<div class="stop-float"></div>
+
+<section class="trends">
+    <ul>
+        <li><a href="#" class="active">Ta的评论</a></li>
+        <li><a href="#">Ta的文章</a></li>
+    </ul>
+    <div class="panels">
+        <div class="active-panel">评论</div>
+        <div>文章</div>
+    </div>
+</section>
+
+<aside></aside>
+
 <footer>
     <hr>
     <p><a href="#">关于我们</a></p>
@@ -34,5 +56,7 @@
         <li><a href="https://github.com/" target="_blank">GitHub</a></li>
     </ul>
 </footer>
+
+<script src="../scripts/activate-tab.js"></script>
 </body>
 </html>
