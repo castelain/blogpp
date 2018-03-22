@@ -6,6 +6,11 @@ section.today, section.posts {
     padding-left: 1rem;
 }
 
+section.today ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 /* profile styles */
 
 section.profile {
@@ -26,7 +31,6 @@ section.profile .stop-float {
 
 /* trends styles */
 section.trends {
-    background-color: #099f9b;
 }
 
 section.trends ul {
@@ -48,6 +52,8 @@ section.trends ul li a {
     line-height: 3;
     text-align: center;
     color: #aaaaaa;
+    border: 1px solid #222222;
+    border-radius: 4px;
     background-color: #099f9b;
 }
 

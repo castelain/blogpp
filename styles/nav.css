@@ -8,8 +8,7 @@ nav.nav-hori {
 
 nav.nav-hori ul li {
     display: inline-block;
-    width: 5%;
-    margin: 0 5px;
+    margin: 0 2px;
 }
 
 nav.nav-hori ul {
