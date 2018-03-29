@@ -52,8 +52,8 @@ section.trends ul li a {
     line-height: 3;
     text-align: center;
     color: #aaaaaa;
-    border: 1px solid #222222;
-    border-radius: 4px;
+    border: none;
+    border-radius: 4px 4px 0 0;
     background-color: #099f9b;
 }
 
