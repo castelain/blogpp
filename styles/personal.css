@@ -1,36 +1,20 @@
-section.today, section.posts {
-    float: left;
-    width: 50%;
-    box-sizing: border-box;
-    border: 1px solid black;
-    padding-left: 1rem;
-}
-
-section.today ul {
-    list-style-type: none;
-    padding: 0;
-}
-
 /* profile styles */
 
 section.profile {
-    background-color: #2dffab;
+    float: left;
+    box-sizing: border-box;
+    width: 20%;
 }
 
 section.profile .profile-key {
     line-height: 2;
 }
 
-section.profile img{
-    float: left;
-}
-
-section.profile .stop-float {
-    line-height: 0;
-}
-
 /* trends styles */
 section.trends {
+    float: left;
+    box-sizing: border-box;
+    width: 80%;
 }
 
 section.trends ul {

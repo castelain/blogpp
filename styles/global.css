@@ -12,12 +12,45 @@
     clear: both;
     height: 5px;
 }
-
 html {
     font-family: sans-serif;
+    font-size: 10px;
 }
-
 body {
     padding: 10px 30px;
     margin: 0 auto;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* header styles */
+header h1, header p {
+    /*text-align: center;*/
+    color: #333;
+}
+
+
+/* footer styles */
+footer p {
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+}
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* colorful text */
+.text-primary {
+    color: blue;
+}
+.text-warning {
+    color: red;
 }

@@ -12,7 +12,8 @@ nav.nav-hori ul li {
 }
 
 nav.nav-hori ul {
-    margin: 5px 0;
+    margin: 0;
+    padding: 7px;
 }
 
 nav.nav-hori a {
