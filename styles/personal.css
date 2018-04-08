@@ -1,13 +1,35 @@
 /* profile styles */
-
 section.profile {
     float: left;
     box-sizing: border-box;
     width: 20%;
+    font-size: 1.3rem;
 }
-
 section.profile .profile-key {
     line-height: 2;
+}
+
+/* social operations */
+.social ul li {
+    float: left;
+    margin-right: 0.5rem;
+
+}
+.social ul li a {
+    display: inline-block;
+    background-image: linear-gradient(-180deg, #2dffab, #099f9b);
+    border-radius: 4px;
+    border: 1px solid #099f9b;
+    padding: 0.5rem;
+}
+.social ul li a:active {
+    background-image: linear-gradient(-180deg, #099f9b, #2dffab);
+    border-radius: 4px;
+    border: 1px solid #099f9b;
+    padding: 0.5rem;
+}
+.social ul li a:hover {
+    cursor: pointer;
 }
 
 /* trends styles */
@@ -15,6 +37,7 @@ section.trends {
     float: left;
     box-sizing: border-box;
     width: 80%;
+    font-size: medium;
 }
 
 section.trends ul {
@@ -70,4 +93,9 @@ section.trends .panels div {
 
 section.trends .active-panel {
     z-index: 1;
+}
+
+section.trends li span {
+    display: inline-block;
+    margin-right: 3rem;
 }
