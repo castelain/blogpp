@@ -19,6 +19,7 @@ html {
 body {
     padding: 10px 30px;
     margin: 0 auto;
+    font-size: 1.2rem;
 }
 ul {
     padding: 0;
@@ -53,4 +54,169 @@ footer ul li {
 }
 .text-warning {
     color: red;
+}
+
+/* button styles */
+.btn {
+    text-align: center;
+    display: inline-block;
+    color: black;
+    background-color: #00CCFF;
+    background-image: linear-gradient(-180deg, #AAFFFF 60%, #00CCFF 90%);
+    border-radius: 0.8rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0.2rem 0.2rem 0.5rem #0066FF;
+    border: 0.1rem solid #3300CC;
+}
+
+.btn:hover {
+    text-align: center;
+    display: inline-block;
+    color: black;
+    background-color: #00AAFF;
+    background-image: linear-gradient(-180deg, #00FFFF 60%, #00AAFF 90%);
+    border-radius: 0.8rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0.2rem 0.2rem 0.5rem #0066FF;
+    border: 0.1rem solid #330099;
+}
+
+.btn:active {
+    text-align: center;
+    display: inline-block;
+    color: black;
+    background-color: #00FFFF;
+    background-image: linear-gradient(-180deg, #00AAFF 60%, #00FFFF 90%);
+    border-radius: 0.8rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0.2rem 0.2rem 0.5rem #0066FF;
+    border: 0.1rem solid #330099;
+}
+
+.btn-danger {
+    text-align: center;
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #990000;
+    background-image: linear-gradient(-180deg, #FF0000 60%, #990000 90%);
+    border-radius: 0.8rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0.2rem 0.2rem 0.5rem black;
+    border: 0.1rem solid black;
+}
+
+.btn-danger:hover {
+    text-align: center;
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #660000;
+    background-image: linear-gradient(-180deg, #CC0000 60%, #660000 90%);
+    border-radius: 0.8rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0.2rem 0.2rem 0.5rem black;
+    border: 0.1rem solid black;
+}
+
+.btn-danger:active {
+    text-align: center;
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #CC0000;
+    background-image: linear-gradient(-180deg, #660000 60%, #CC0000 90%);
+    border-radius: 0.8rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0.2rem 0.2rem 0.5rem black;
+    border: 0.1rem solid black;
+}
+
+.btn-normal {
+    text-align: center;
+    display: inline-block;
+    color: black;
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+    border-radius: 0.8rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0.2rem 0.2rem 0.5rem #aaaaaa;
+    border: 0.1rem solid #DBDBDB;
+}
+
+.btn-normal:hover {
+    text-align: center;
+    display: inline-block;
+    color: black;
+    background-color: #e6ebf1;
+    background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
+    border-radius: 0.8rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0.2rem 0.2rem 0.5rem #aaaaaa;
+    border: 0.1rem solid #aaaaaa;
+}
+
+.btn-normal:active {
+    text-align: center;
+    display: inline-block;
+    color: black;
+    background-color: #f0f3f6;
+    background-image: linear-gradient(-180deg, #e6ebf1 0%, #f0f3f6 90%);
+    border-radius: 0.8rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0.2rem 0.2rem 0.5rem #aaaaaa;
+    border: 0.1rem solid #aaaaaa;
+}
+
+.btn-add5rem {
+    padding: 1rem 5rem 1rem 5rem !important;
+}
+
+.btn-10rem {
+    box-sizing: border-box;
+    width: 10rem;
+}
+
+.btn-20rem {
+    box-sizing: border-box;
+    width: 20rem;
+}
+
+.btn-30rem {
+    box-sizing: border-box;
+    width: 30rem;
+}
+
+.btn-40rem {
+    box-sizing: border-box;
+    width: 40rem;
+}
+
+.btn-50rem {
+    box-sizing: border-box;
+    width: 50rem;
 }

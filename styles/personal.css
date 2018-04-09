@@ -13,23 +13,7 @@ section.profile .profile-key {
 .social ul li {
     float: left;
     margin-right: 0.5rem;
-
-}
-.social ul li a {
-    display: inline-block;
-    background-image: linear-gradient(-180deg, #2dffab, #099f9b);
-    border-radius: 4px;
-    border: 1px solid #099f9b;
-    padding: 0.5rem;
-}
-.social ul li a:active {
-    background-image: linear-gradient(-180deg, #099f9b, #2dffab);
-    border-radius: 4px;
-    border: 1px solid #099f9b;
-    padding: 0.5rem;
-}
-.social ul li a:hover {
-    cursor: pointer;
+    font-size: 1.2rem;
 }
 
 /* trends styles */

@@ -1,13 +1,19 @@
 /* index section styles */
-section.today, section.posts {
-    float: left;
-    width: 50%;
-    box-sizing: border-box;
+section.main {
     background-color: #eeeeee;
-    background-clip: padding-box;
+}
+section.today {
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
     padding-left: 1rem;
 }
-
+section.posts {
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+    padding-left: 1rem;
+}
 section.today ul {
     list-style-type: none;
     padding: 0;

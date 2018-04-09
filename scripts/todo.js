@@ -1,6 +1,6 @@
 var writing_plans_div = document.querySelector('div.writing-plans');
 var plan_input = document.querySelector('div.writing-plans input');
-var add_btn = document.querySelector('div.writing-plans button');
+var add_btn = document.querySelector('div.writing-plans a');
 
 var plans = document.createElement('ol');
 writing_plans_div.appendChild(plans);
@@ -14,7 +14,8 @@ add_btn.onclick = function () {
     var new_span = document.createElement('span');
     new_span.textContent = plan_name;
     
-    var btn_delete = document.createElement('button');
+    var btn_delete = document.createElement('a');
+    btn_delete.className = 'btn';
     btn_delete.textContent = 'Delete';
 
     new_item.appendChild(new_span);
