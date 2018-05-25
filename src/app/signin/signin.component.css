@@ -1,0 +1,13 @@
+form.sign-in {
+  text-align: center;
+  max-width: 330px;
+  margin: 5rem auto;
+}
+#email {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#password {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
