@@ -10,7 +10,7 @@ import { AppError } from 'shared/common/app-error';
 
 @Injectable()
 export class AuthService {
-  private url = 'http://localhost:5000/api/auth';
+  private url = 'http://localhost:9001/api/auth';
 
   constructor(
     private http: HttpClient,
@@ -27,7 +27,7 @@ export class AuthService {
           }
           return false;
         }),
-        // catchError(this.handleError)
+        catchError(this.handleError)
       );
   }
 
