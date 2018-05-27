@@ -33,7 +33,6 @@ export class SigninComponent implements OnInit {
           await this.router.navigate(['/']);
         } else {
           this.form.setErrors({ invalidEmailOrPassword: true });
-          console.log(this.form);
         }
       });
   }
