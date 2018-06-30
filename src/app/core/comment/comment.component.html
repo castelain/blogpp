@@ -1,0 +1,13 @@
+<div class="media">
+  <a [routerLink]="['/show-profile', comment?.author._id]">
+    <img src="../../../assets/images/avatar.png" alt="" class="mr-3" width="75px">
+  </a>
+  <div class="media-body">
+    <h5 class="mt-0"><a [routerLink]="['/show-profile', comment?.author._id]">{{ comment?.author?.name }}</a></h5>
+    <h5 *ngIf="comment.parent_post" class="mt-0">Post title: {{ comment?.parent_post?.content }}</h5>
+    <p *ngIf="comment.parent_comment" class="mt-0">Reply to: {{ comment.parent_comment.content | summary: 30 }}</p>
+    <p>{{ comment.content | summary }}</p>
+    <small>{{ posted_at | date }}</small>
+    <button disabled (click)="deleteComment(comment._id)" class="btn btn-danger btn-sm ml-2">Delete</button>
+  </div>
+</div>

@@ -7,6 +7,7 @@ import { PostService } from 'shared/services/post.service';
 import { SummaryPipe } from './pipes/summary.pipe';
 import { AuthGuard } from './services/auth.guard';
 import { UserService } from './services/user.service';
+import { CommentService } from 'shared/services/comment.service';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { UserService } from './services/user.service';
     DataService,
     PostService,
     AuthGuard,
-    UserService
+    UserService,
+    CommentService
   ]
 })
 export class SharedModule { }

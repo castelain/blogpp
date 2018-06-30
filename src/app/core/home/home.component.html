@@ -1,0 +1,47 @@
+<div class="container mt-3">
+  <div class="card" *ngIf="authService.isLoggedIn()">
+    <div class="card-body">
+      <h4 class="card-title">Welcome, {{ authService.currentUser.name }}.</h4>
+      <p class="card-text">
+        What's in your mind? Write them down now.
+      </p>
+      <button routerLink="/new-post" class="card-link btn btn-outline-primary btn-sm">New Post</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="jumbotron mt-5">
+    <h1>Blog++</h1>
+    <p class="lead">A tool for content providers.</p>
+    <hr class="my-4">
+    <nav class="nav">
+      <a routerLink="/" class="nav-link">Programming</a>
+      <a routerLink="/" class="nav-link">Music</a>
+      <a routerLink="/" class="nav-link">Literature</a>
+      <a routerLink="/" class="nav-link">Tutorial</a>
+      <a routerLink="/" class="nav-link disabled">And more...</a>
+    </nav>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <h3>Recent posts</h3>
+      <ul class="list-group list-group-flush">
+        <li *ngFor="let post of posts" class="list-group">
+          <app-post [post]="post"></app-post>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h3>Recent comments</h3>
+      <ul class="list-group list-group-flush">
+        <li *ngFor="let comment of comments" class="list-group">
+          <app-comment [comment]="comment"></app-comment>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

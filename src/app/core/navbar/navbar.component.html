@@ -1,0 +1,22 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a routerLink="/" class="navbar-brand">Blog++</a>
+  <form class="form-inline ml-auto" [formGroup]="searchForm">
+    <input type="text" class="form-control mr-2" placeholder="Search" formControlName="keyword">
+    <button class="btn btn-outline-success mr-2" type="submit">Search</button>
+  </form>
+  <div *ngIf="authService.isLoggedIn()" ngbDropdown class="d-inline-block">
+    <button
+      class="btn btn-outline-primary"
+      id="userDropdown"
+      ngbDropdownToggle>{{ authService.currentUser.name}}</button>
+    <div ngbDropdownMenu aria-labelledby="userDropdown">
+      <button
+        class="dropdown-item" [routerLink]="['/show-profile', authService.currentUser._id]">Profile</button>
+      <button
+        class="dropdown-item"
+        (click)="authService.logout()">Logout</button>
+    </div>
+  </div>
+  <button *ngIf="!authService.isLoggedIn()" routerLink="/signup" class="btn btn-outline-primary mr-2">Sign up</button>
+  <button *ngIf="!authService.isLoggedIn()" routerLink="/signin" class="btn btn-outline-primary mr-2">Sign in</button>
+</nav>

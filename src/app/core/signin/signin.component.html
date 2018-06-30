@@ -1,0 +1,20 @@
+<form [formGroup]="form" (ngSubmit)="signIn(form.value)" class="sign-in">
+  <h4 class="mb-4">Please sign in</h4>
+  <input
+    id="email"
+    formControlName="email"
+    type="email"
+    class="form-control bg-light"
+    placeholder="Email address"
+    autofocus>
+  <input
+    id="password"
+    formControlName="password"
+    type="password"
+    class="form-control bg-light"
+    placeholder="Password">
+  <p *ngIf="form.touched && form.invalid" class="alert alert-danger">Invalid email or password.</p>
+  <button
+    type="submit"
+    class="btn btn-primary btn-block mt-3">Sign in</button>
+</form>

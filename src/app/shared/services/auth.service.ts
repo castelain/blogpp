@@ -7,6 +7,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 import { BadInput } from 'shared/common/bad-input';
 import { NotFoundError } from 'shared/common/not-found-error';
 import { AppError } from 'shared/common/app-error';
+import { User } from 'shared/models/user';
 
 @Injectable()
 export class AuthService {
@@ -49,7 +50,7 @@ export class AuthService {
     return !isExpired;
   }
 
-  get currentUser() {
+  get currentUser(): User {
     const token = localStorage.getItem('token');
     if (!token) {
       return null;

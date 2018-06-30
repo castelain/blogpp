@@ -50,7 +50,7 @@ export class DataService {
   }
 
   update(resource) {
-    return this.http.put(`${this.url}/${resource.id}`, _.omit(resource, ['_id', 'id']), this.httpOptions)
+    return this.http.put(`${this.url}/${resource._id}`, _.omit(resource, ['_id', 'id']), this.httpOptions)
       .pipe(
         catchError(this.handleError)
       );
